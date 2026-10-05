@@ -1,8 +1,45 @@
+# --- Secrets ---------------------------------------------------------------
+.env
+.env.local
+*.pem
+*.key
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# --- Databases -------------------------------------------------------------
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+backend/data/*.db*
+
+# --- Node / frontend -------------------------------------------------------
 node_modules/
+frontend/dist/
+frontend/.vite/
 build/
 dist/
 coverage/
-.DS_Store
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 *.log
-.env*
-!.env.example
+
+# --- Editors / OS ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

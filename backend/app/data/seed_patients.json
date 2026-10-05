@@ -1,0 +1,847 @@
+[
+ {
+  "id": "p-01",
+  "nationalId": "0073829145",
+  "name": "Fatemeh Rostami",
+  "persianName": "فاطمه رستمی",
+  "age": 58,
+  "gender": "F",
+  "birthDate": "1968-04-12",
+  "birthDateJalali": "1347/01/23",
+  "householdNumber": "32-الف-098",
+  "healthCenter": "Deh Namak Rural Comprehensive Health Center (مرکز جامع ده‌نمک)",
+  "healthHouse": "Khorram-Deh Health House (خانه بهداشت خرم‌ده)",
+  "assignedBehvarz": "Maryam Karimi (بهورز: مریم کریمی)",
+  "phone": "0912-345-6789",
+  "insuranceType": "Rural Health Insurance (بیمه سلامت روستایی)",
+  "bloodType": "A+",
+  "chronicConditions": [
+   {
+    "name": "Type 2 Diabetes Mellitus",
+    "persianName": "دیابت نوع ۲",
+    "sinceJalali": "1398/06",
+    "controlStatus": "SUBOPTIMAL"
+   },
+   {
+    "name": "Essential Hypertension",
+    "persianName": "پرفشاری خون اولیه",
+    "sinceJalali": "1396/03",
+    "controlStatus": "UNCONTROLLED"
+   }
+  ],
+  "currentMedications": [
+   {
+    "name": "Metformin 500mg",
+    "dosage": "500 mg",
+    "frequency": "Twice daily with meals (صبح و شب همراه غذا)",
+    "complianceReported": "REGULAR",
+    "indication": "Type 2 Diabetes Mellitus (دیابت نوع ۲)",
+    "startDateJalali": "1398/06/15",
+    "lastDispensedJalali": "1405/04/22",
+    "refillsCount": 24,
+    "prescribedBy": "Dr. N. Alavi (Family Physician)",
+    "monitoringNotes": "Assess renal clearance; monitor eGFR and vitamin B12 periodically."
+   },
+   {
+    "name": "Losartan Potassium 50mg",
+    "dosage": "50 mg",
+    "frequency": "Once daily in morning (روزی یک عدد صبح)",
+    "complianceReported": "REGULAR",
+    "indication": "Essential Hypertension (پرفشاری خون اولیه)",
+    "startDateJalali": "1396/03/10",
+    "lastDispensedJalali": "1405/04/22",
+    "refillsCount": 32,
+    "prescribedBy": "Dr. N. Alavi (Family Physician)",
+    "monitoringNotes": "Requires annual Serum Potassium (K+) and Creatinine evaluation."
+   },
+   {
+    "name": "Atorvastatin 20mg",
+    "dosage": "20 mg",
+    "frequency": "Nightly at bedtime (شبانگاه)",
+    "complianceReported": "IRREGULAR",
+    "indication": "Dyslipidemia & IraPEN CVD Risk Reduction (کاهش خطر قلبی عروقی)",
+    "startDateJalali": "1403/04/01",
+    "lastDispensedJalali": "1405/02/10",
+    "refillsCount": 6,
+    "prescribedBy": "Dr. N. Alavi (Family Physician)",
+    "monitoringNotes": "Patient paused intake 2 months ago; counsel today on adherence and check LFT/lipids."
+   }
+  ],
+  "vitalsHistory": [
+   {
+    "date": "2026-08-15",
+    "jalaliDate": "1405/05/24",
+    "bloodPressureSys": 148,
+    "bloodPressureDia": 92,
+    "heartRate": 78,
+    "weightKg": 74.5,
+    "heightCm": 158,
+    "bmi": 29.8,
+    "fastingBloodSugar": 162,
+    "hba1c": 8.4,
+    "measuredBy": "Dr. N. Alavi (Family Physician)",
+    "recordedIn": "SIB Outpatient Clinic Module (فرم ویزیت پزشک)"
+   },
+   {
+    "date": "2026-05-10",
+    "jalaliDate": "1405/02/20",
+    "bloodPressureSys": 152,
+    "bloodPressureDia": 94,
+    "heartRate": 82,
+    "weightKg": 75,
+    "heightCm": 158,
+    "bmi": 30,
+    "fastingBloodSugar": 174,
+    "measuredBy": "Maryam Karimi (Behvarz)",
+    "recordedIn": "SIB Chronic Disease Monitoring (مراقبت فعال بهورز)"
+   },
+   {
+    "date": "2026-01-18",
+    "jalaliDate": "1404/10/28",
+    "bloodPressureSys": 140,
+    "bloodPressureDia": 88,
+    "heartRate": 74,
+    "weightKg": 73.8,
+    "heightCm": 158,
+    "bmi": 29.5,
+    "fastingBloodSugar": 155,
+    "hba1c": 7.9,
+    "measuredBy": "Dr. N. Alavi",
+    "recordedIn": "SIB Outpatient Clinic Module"
+   }
+  ],
+  "encounters": [
+   {
+    "id": "enc-101",
+    "date": "2026-08-15",
+    "jalaliDate": "1405/05/24",
+    "facility": "Deh Namak Rural Center",
+    "clinician": "Dr. N. Alavi",
+    "role": "Family Physician",
+    "complaint": "Mild occipital morning headache and blurred vision when reading",
+    "diagnosis": "Uncontrolled Hypertension, Suboptimally controlled T2DM",
+    "icdCode": "I10 / E11.9",
+    "vitals": {
+     "bloodPressureSys": 148,
+     "bloodPressureDia": 92,
+     "fastingBloodSugar": 162
+    },
+    "actionsTaken": [
+     "Renewed Metformin",
+     "Prescribed Losartan 50mg",
+     "Advised dietary salt reduction"
+    ],
+    "sibModule": "فرم ویزیت و مراقبت پزشک خانواده"
+   },
+   {
+    "id": "enc-102",
+    "date": "2026-05-10",
+    "jalaliDate": "1405/02/20",
+    "facility": "Khorram-Deh Health House",
+    "clinician": "Maryam Karimi",
+    "role": "Behvarz",
+    "complaint": "Routine quarterly chronic care surveillance (مراقبت فصلی دیابت و فشار)",
+    "diagnosis": "Chronic HTN & T2DM follow-up",
+    "icdCode": "Z09",
+    "vitals": {
+     "bloodPressureSys": 152,
+     "bloodPressureDia": 94,
+     "weightKg": 75
+    },
+    "actionsTaken": [
+     "Blood pressure check",
+     "Fasting glucose glucometry (174 mg/dL)",
+     "Encouraged walking 30 min daily"
+    ],
+    "sibModule": "فرم مراقبت دوره‌ای بهورز (سامانه سیب)"
+   },
+   {
+    "id": "enc-103",
+    "date": "2025-11-04",
+    "jalaliDate": "1404/08/13",
+    "facility": "Valiasr Specialty Polyclinic (سطح ۲)",
+    "clinician": "Dr. S. Hosseini",
+    "role": "Specialist",
+    "complaint": "Referral from Level 1 for ophthalmologic screening",
+    "diagnosis": "Early background diabetic retinopathy (non-proliferative)",
+    "icdCode": "E11.319",
+    "actionsTaken": [
+     "Fundoscopy performed",
+     "Advised strict glycemic and BP control",
+     "Annual recheck advised"
+    ],
+    "sibModule": "سیستم تبادل ارجاع سطح ۲ به سطح ۱ (بازخورد ارجاع)"
+   }
+  ],
+  "preventiveCare": [
+   {
+    "category": "IraPEN Cardiovascular 10-Year Risk (خطرسنجی ۱۰ ساله ایراپن)",
+    "persianCategory": "خطرسنجی قلبی عروقی ایراپن",
+    "status": "OVERDUE",
+    "lastDone": "2024-06-20",
+    "lastDoneJalali": "1403/03/30",
+    "nextDue": "2025-06-20",
+    "nextDueJalali": "1404/03/30",
+    "details": "Calculated 10-year CVD risk was 18% (Orange Category). Annual recalculation overdue by 14 months in SIB.",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "SIB IraPEN Registry record #IRP-4890",
+     "sourceSystem": "SIB IraPEN Engine"
+    }
+   },
+   {
+    "category": "Diabetic Nephropathy / Microalbuminuria (آلبومین به کراتینین ادرار)",
+    "persianCategory": "بررسی آسیب کلیوی دیابت (میکروآلبومینوری)",
+    "status": "DUE",
+    "lastDone": "2024-01-11",
+    "lastDoneJalali": "1402/10/21",
+    "details": "Spot urine albumin-to-creatinine ratio (UACR) not performed in >24 months. Standard protocol requires annual check.",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Derived from National Diabetes Surveillance Guidelines (دستورالعمل کشوری دیابت)",
+     "sourceSystem": "Ω-SIB Protocol Validator"
+    }
+   },
+   {
+    "category": "Colorectal Cancer Screening (FIT Test / تست فیت غربالگری روده بزرگ)",
+    "persianCategory": "غربالگری سرطان روده بزرگ (تست فیت)",
+    "status": "UP_TO_DATE",
+    "lastDone": "2026-03-02",
+    "lastDoneJalali": "1404/12/12",
+    "nextDue": "2028-03-02",
+    "nextDueJalali": "1406/12/12",
+    "details": "Fecal Immunochemical Test (FIT) recorded negative at Health House by Behvarz.",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "SIB Cancer Screening Registry Form-C7",
+     "sourceSystem": "SIB Preventive Module"
+    }
+   },
+   {
+    "category": "Diabetic Foot Examination (معاینه پای دیابتی با مونوفیلامان)",
+    "persianCategory": "معاینه پای دیابتی و تست حس",
+    "status": "OVERDUE",
+    "lastDone": "2025-01-14",
+    "lastDoneJalali": "1403/10/25",
+    "details": "10g monofilament sensory exam and pedal pulse check overdue by 8 months.",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "National Clinical Protocol for Rural Health Centers",
+     "sourceSystem": "Ω-SIB Preventive Rule"
+    }
+   }
+  ],
+  "dataQualityIssues": [
+   {
+    "id": "dq-01",
+    "severity": "CRITICAL",
+    "type": "DUPLICATE_RECORD",
+    "title": "Conflicting Blood Pressure readings on same day in SIB",
+    "description": "SIB contains two disjoint records for visit 1405/02/20: Outpatient table lists 130/80 mmHg while Behvarz surveillance log lists 152/94 mmHg.",
+    "sibLocation": "SIB Tables: tbl_visit_encounter vs tbl_behvarz_chronic_log",
+    "suggestedCorrection": "Reconcile today: Verify current seated clinical reading and mark the 152/94 measurement as primary.",
+    "provenance": {
+     "type": "INFERENCE",
+     "sourceText": "Discrepancy detected during cross-module data collation between Behvarz & Physician tables.",
+     "sourceSystem": "Ω-SIB Integrity Auditor",
+     "requiresConfirmation": true
+    }
+   },
+   {
+    "id": "dq-02",
+    "severity": "WARNING",
+    "type": "MISSING_FIELD",
+    "title": "Unrecorded Serum Potassium & eGFR prior to Losartan continuation",
+    "description": "Losartan 50mg has been active for 9 months, but Serum Creatinine and Potassium fields are empty in SIB laboratory subform.",
+    "sibLocation": "SIB Subform: Paraclinic / Biochemistry (آزمایشگاه بیوشیمی)",
+    "suggestedCorrection": "Order Serum Cr, K+, and eGFR in today encounter.",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Inference based on concurrent ACEi/ARB prescription without renal labs in last 6 months.",
+     "sourceSystem": "Ω-SIB Safety Ruleset"
+    }
+   },
+   {
+    "id": "dq-03",
+    "severity": "NOTICE",
+    "type": "MISSING_FIELD",
+    "title": "Unknown Salt Intake / Dietary Sodium habit in SIB lifestyle registry",
+    "description": "Field \"مصرف نمک روزانه\" is stored as NULL in the patient lifestyle baseline.",
+    "sibLocation": "SIB Form: Lifestyle & Nutritional Risk Factors (عوامل خطر تغذیه‌ای)",
+    "suggestedCorrection": "Ask patient today and record standard qualitative score (کم / متوسط / پرنمک).",
+    "provenance": {
+     "type": "UNKNOWN",
+     "sourceText": "No reliable data exists in institutional records since registration in 1396.",
+     "sourceSystem": "SIB Baseline Form"
+    }
+   }
+  ],
+  "suggestions": [
+   {
+    "id": "sug-01",
+    "priority": "HIGH",
+    "title": "Recalculate IraPEN 10-Year Cardiovascular Risk Score",
+    "rationale": "Patient is 58yo with 2 chronic vascular conditions. Overdue for annual IraPEN chart recalculation (last score was 18% Orange).",
+    "actionType": "PREVENTIVE_SCREENING",
+    "draftValue": "IraPEN Risk Assessment Form 1405",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Derived from: Iranian Ministry of Health IraPEN Protocol for Primary Health Care",
+     "confidence": 0.96
+    }
+   },
+   {
+    "id": "sug-02",
+    "priority": "HIGH",
+    "title": "Order Fasting Blood Glucose, HbA1c, and Urine Albumin/Cr Ratio",
+    "rationale": "HbA1c was 8.4% (>8.0% threshold) on last check and urine microalbumin is absent for >1 year.",
+    "actionType": "LAB_ORDER",
+    "draftValue": "FBS, HbA1c, Cr, K+, Urine Albumin/Creatinine Ratio (UACR)",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Inferred from elevated historic FBS (162-174) & overdue UACR schedule",
+     "confidence": 0.94
+    }
+   },
+   {
+    "id": "sug-03",
+    "priority": "MEDIUM",
+    "title": "Consider intensifying antihypertensive therapy",
+    "rationale": "Current systolic BP remains >140 mmHg across 3 consecutive encounters on single-agent Losartan 50mg.",
+    "actionType": "MEDICATION_ADJUSTMENT",
+    "draftValue": "Add Hydrochlorothiazide 12.5mg OR increase Losartan to 50mg BID after confirming K/Cr",
+    "provenance": {
+     "type": "INFERENCE",
+     "sourceText": "Clinician confirmation strictly required before altering regimen.",
+     "requiresConfirmation": true
+    }
+   },
+   {
+    "id": "sug-04",
+    "priority": "ROUTINE",
+    "title": "Referral for Annual Ophthalmology Checkup (مراقبت سالیانه چشم‌پزشکی)",
+    "rationale": "Last Level 2 ophthalmology visit was 10 months ago noting early non-proliferative retinopathy.",
+    "actionType": "REFERRAL",
+    "draftValue": "Referral to Level 2 Ophthalmologist via SIB Electronic Referral System (سامانه ارجاع الکترونیک)",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "Derived from: SIB Level 2 Feedback note enc-103 dated 1404/08/13"
+    }
+   }
+  ],
+  "irapenRiskScore": {
+   "percentage": 18,
+   "colorCategory": "ORANGE",
+   "calculatedDateJalali": "1403/03/30",
+   "nextAssessmentDueJalali": "1404/03/30"
+  },
+  "rawSibPayloadSnippet": {
+   "sys_patient_uid": "SIB-IR-88492019-90",
+   "cod_meli": "0073829145",
+   "parvandeh_khanewadeh": "32-A-098",
+   "ostan_cod": "028",
+   "markaz_salemat_id": "RHC-3910",
+   "vitals_raw": [
+    {
+     "date_shamsi": "1405/05/24",
+     "sys": 148,
+     "dia": 92,
+     "glc": 162
+    },
+    {
+     "date_shamsi": "1405/02/20",
+     "sys": 152,
+     "dia": 94,
+     "glc": 174
+    }
+   ],
+   "pending_flags": [
+    "FLAG_DUPLICATE_BP_CONFLICT",
+    "FLAG_NEPHROPATHY_SCREEN_OVERDUE"
+   ]
+  }
+ },
+ {
+  "id": "p-02",
+  "nationalId": "0491823908",
+  "name": "Mohammad Rezaei",
+  "persianName": "محمد رضایی",
+  "age": 44,
+  "gender": "M",
+  "birthDate": "1982-09-03",
+  "birthDateJalali": "1361/06/12",
+  "householdNumber": "14-ب-012",
+  "healthCenter": "Shahid Fakoori Urban Health Center (پایگاه سلامت شهید فکوری)",
+  "healthHouse": "Shahid Fakoori Primary Post (پایگاه ضمیمه)",
+  "assignedBehvarz": "Ali Asghari (مراقب سلامت: علی اصغری)",
+  "phone": "0935-882-1144",
+  "insuranceType": "Social Security Organization (تامین اجتماعی)",
+  "bloodType": "B+",
+  "chronicConditions": [
+   {
+    "name": "Suspected Hypertension (Stage 1)",
+    "persianName": "مشکوک به پرفشاری خون (مرحله ۱)",
+    "sinceJalali": "1404/11",
+    "controlStatus": "UNCONTROLLED"
+   }
+  ],
+  "currentMedications": [],
+  "vitalsHistory": [
+   {
+    "date": "2026-07-22",
+    "jalaliDate": "1405/04/31",
+    "bloodPressureSys": 154,
+    "bloodPressureDia": 96,
+    "heartRate": 86,
+    "weightKg": 88,
+    "heightCm": 174,
+    "bmi": 29.1,
+    "measuredBy": "Ali Asghari (Health Worker)",
+    "recordedIn": "SIB Screening Station (ایستگاه غربالگری پایگاه)"
+   }
+  ],
+  "encounters": [
+   {
+    "id": "enc-201",
+    "date": "2026-07-22",
+    "jalaliDate": "1405/04/31",
+    "facility": "Shahid Fakoori Urban Health Center",
+    "clinician": "Ali Asghari",
+    "role": "Behvarz",
+    "complaint": "Came for administrative health certificate for vocational driving license",
+    "diagnosis": "Elevated BP on screening; tobacco user (20 cig/day)",
+    "icdCode": "R03.0 / F17.21",
+    "vitals": {
+     "bloodPressureSys": 154,
+     "bloodPressureDia": 96,
+     "heartRate": 86
+    },
+    "actionsTaken": [
+     "BP re-measured after 15 min rest: 150/94",
+     "Scheduled physician visit for HTN diagnostic workup"
+    ],
+    "sibModule": "فرم ثبت معاینات صدور گواهی سلامت"
+   }
+  ],
+  "preventiveCare": [
+   {
+    "category": "Cardiovascular Risk Stratification (خطرسنجی بیماری‌های قلبی عروقی)",
+    "persianCategory": "خطرسنجی بیماری‌های قلبی عروقی",
+    "status": "DUE",
+    "details": "Initial IraPEN chart cannot be computed because Total Cholesterol is unrecorded in SIB.",
+    "provenance": {
+     "type": "UNKNOWN",
+     "sourceText": "Cholesterol value is missing in SIB database.",
+     "sourceSystem": "SIB Laboratory Register"
+    }
+   },
+   {
+    "category": "Smoking Cessation Counseling (مشاوره ترک دخانیات)",
+    "persianCategory": "مشاوره و ارجاع به کلینیک ترک دخانیات",
+    "status": "DUE",
+    "details": "Patient reports 15 pack-years of cigarette smoking. SIB smoking cessation protocol not yet initiated.",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "Self-reported during Behvarz screening 1405/04/31",
+     "sourceSystem": "SIB Behavioral Risk Form"
+    }
+   }
+  ],
+  "dataQualityIssues": [
+   {
+    "id": "dq-21",
+    "severity": "CRITICAL",
+    "type": "MISSING_FIELD",
+    "title": "Missing Fasting Lipid Profile in SIB record",
+    "description": "Cannot establish baseline CVD risk score without Total Cholesterol and HDL.",
+    "sibLocation": "SIB Laboratory Form: Lipid Panel (چربی‌های خون)",
+    "suggestedCorrection": "Issue standard SIB lab order for Fasting Lipid Profile (Chol, TG, HDL, LDL).",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "Database query returned NULL for test_code LAB-LIPID-01",
+     "sourceSystem": "SIB Query Engine"
+    }
+   },
+   {
+    "id": "dq-22",
+    "severity": "WARNING",
+    "type": "MISSING_FIELD",
+    "title": "Family History of Premature CAD unverified in SIB",
+    "description": "Family tree risk factor section is unpopulated in SIB Form-101.",
+    "sibLocation": "SIB Form: Family Health Tree (پرونده ژنتیک و سابقه خانوادگی)",
+    "suggestedCorrection": "Inquire today: Did father or brother suffer myocardial infarction before age 55?",
+    "provenance": {
+     "type": "UNKNOWN",
+     "sourceText": "No data exists in family health registry.",
+     "sourceSystem": "SIB Family History Table"
+    }
+   }
+  ],
+  "suggestions": [
+   {
+    "id": "sug-21",
+    "priority": "HIGH",
+    "title": "Confirm Hypertension Diagnosis via 2nd Clinical Reading",
+    "rationale": "Patient had 154/96 mmHg at initial post screening. Requires formal physician auscultatory confirmation today.",
+    "actionType": "PREVENTIVE_SCREENING",
+    "draftValue": "Seated auscultatory BP right arm",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Iranian Ministry of Health Hypertension Clinical Practice Guideline"
+    }
+   },
+   {
+    "id": "sug-22",
+    "priority": "HIGH",
+    "title": "Order Baseline Blood & Urine Panel for Newly Suspected HTN",
+    "rationale": "Includes FBS, BUN, Cr, Na, K, Urinalysis, and Fasting Lipid profile prior to starting pharmacotherapy.",
+    "actionType": "LAB_ORDER",
+    "draftValue": "Baseline HTN Panel: FBS, Lipid Profile, BUN, Cr, K, Urinalysis, ECG",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Ministry of Health Level 1 Essential Paraclinical Workup"
+    }
+   }
+  ],
+  "rawSibPayloadSnippet": {
+   "sys_patient_uid": "SIB-IR-99120381-12",
+   "cod_meli": "0491823901",
+   "parvandeh_khanewadeh": "14-B-012",
+   "vitals_raw": [
+    {
+     "date_shamsi": "1405/04/31",
+     "sys": 154,
+     "dia": 96
+    }
+   ],
+   "pending_flags": [
+    "FLAG_CHOL_MISSING_FOR_IRAPEN"
+   ]
+  }
+ },
+ {
+  "id": "p-03",
+  "nationalId": "0019283741",
+  "name": "Zahra Hosseini",
+  "persianName": "زهرا حسینی",
+  "age": 29,
+  "gender": "F",
+  "birthDate": "1997-03-15",
+  "birthDateJalali": "1375/12/25",
+  "householdNumber": "08-ج-044",
+  "healthCenter": "Deh Namak Rural Comprehensive Health Center (مرکز جامع ده‌نمک)",
+  "healthHouse": "Khorram-Deh Health House (خانه بهداشت خرم‌ده)",
+  "assignedBehvarz": "Maryam Karimi (بهورز: مریم کریمی)",
+  "phone": "0919-555-1234",
+  "insuranceType": "Rural Health Insurance (بیمه سلامت روستایی)",
+  "bloodType": "O-",
+  "chronicConditions": [],
+  "currentMedications": [
+   {
+    "name": "Ferrous Sulfate 50mg + Folic Acid 0.5mg",
+    "dosage": "1 tablet",
+    "frequency": "Daily with orange juice / water (روزی یک عدد همراه آب‌میوه)",
+    "complianceReported": "REGULAR",
+    "indication": "Antenatal Anemia Prophylaxis (پیشگیری از کم‌خونی بارداری)",
+    "startDateJalali": "1405/03/10",
+    "lastDispensedJalali": "1405/05/10",
+    "refillsCount": 3,
+    "prescribedBy": "Maryam Karimi (Behvarz / Midwife)",
+    "monitoringNotes": "Recheck CBC hemoglobin at 28 weeks; counsel on taking away from tea/dairy."
+   },
+   {
+    "name": "Calcium + Vitamin D",
+    "dosage": "500 mg",
+    "frequency": "Daily noon after meal (ظهرها پس از غذا)",
+    "complianceReported": "REGULAR",
+    "indication": "Gestational Bone & Fetal Skeletal Support (مکمل کلسیم بارداری)",
+    "startDateJalali": "1405/03/10",
+    "lastDispensedJalali": "1405/05/10",
+    "refillsCount": 3,
+    "prescribedBy": "Dr. N. Alavi (Family Physician)",
+    "monitoringNotes": "Maintain 2-hour interval between iron and calcium supplements."
+   }
+  ],
+  "vitalsHistory": [
+   {
+    "date": "2026-08-01",
+    "jalaliDate": "1405/05/10",
+    "bloodPressureSys": 110,
+    "bloodPressureDia": 70,
+    "heartRate": 76,
+    "weightKg": 64.2,
+    "heightCm": 162,
+    "bmi": 24.4,
+    "measuredBy": "Maryam Karimi (Behvarz)",
+    "recordedIn": "SIB Maternal Care Log (فرم مراقبت بارداری)"
+   }
+  ],
+  "encounters": [
+   {
+    "id": "enc-301",
+    "date": "2026-08-01",
+    "jalaliDate": "1405/05/10",
+    "facility": "Khorram-Deh Health House",
+    "clinician": "Maryam Karimi",
+    "role": "Behvarz",
+    "complaint": "Routine gestational visit (Week 24 of pregnancy, G2P1)",
+    "diagnosis": "Intrauterine pregnancy at 24 weeks gestation; Rh-negative mother",
+    "icdCode": "Z34.02 / O36.012",
+    "vitals": {
+     "bloodPressureSys": 110,
+     "bloodPressureDia": 70,
+     "weightKg": 64.2
+    },
+    "actionsTaken": [
+     "Fetal heart tone checked (142 bpm)",
+     "Fundal height measured: 24 cm",
+     "Prescribed prenatal supplements"
+    ],
+    "sibModule": "فرم ثبت مراقبت مادر باردار (سامانه سیب)"
+   }
+  ],
+  "preventiveCare": [
+   {
+    "category": "Gestational Diabetes Screening (غربالگری دیابت بارداری GCT/OGTT)",
+    "persianCategory": "غربالگری دیابت بارداری",
+    "status": "DUE",
+    "nextDue": "2026-10-10",
+    "nextDueJalali": "1405/07/18",
+    "details": "Week 24–28 1-step or 2-step glucose tolerance test due immediately.",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "National Maternal Care Protocol (دستورالعمل مراقبت مادری وزارت بهداشت)"
+    }
+   },
+   {
+    "category": "Anti-D Immunoglobulin (روگام برای مادران Rh منفی)",
+    "persianCategory": "تزریق آمپول روگام (هفته ۲۸)",
+    "status": "DUE",
+    "nextDue": "2026-10-25",
+    "nextDueJalali": "1405/08/03",
+    "details": "Mother is O negative; father is A positive. Rh-immunoglobulin injection scheduled for week 28.",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "SIB Rh Incompatibility Registry"
+    }
+   }
+  ],
+  "dataQualityIssues": [
+   {
+    "id": "dq-31",
+    "severity": "WARNING",
+    "type": "MISSING_FIELD",
+    "title": "Missing Indirect Coombs Test result in SIB lab subform",
+    "description": "Prior to Week 28 Anti-D administration, Indirect Coombs antibody titer must be registered.",
+    "sibLocation": "SIB Maternal Paraclinic Tab: Serology",
+    "suggestedCorrection": "Confirm if sample was sent to district central lab; enter result.",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "Zero records in SIB Serology table for pregnancy cycle #02"
+    }
+   }
+  ],
+  "suggestions": [
+   {
+    "id": "sug-31",
+    "priority": "HIGH",
+    "title": "Order 75g Oral Glucose Tolerance Test (OGTT) for GDM Screening",
+    "rationale": "Patient is at 26 weeks gestation; critical window for gestational diabetes detection.",
+    "actionType": "LAB_ORDER",
+    "draftValue": "OGTT 75g (Fasting, 1-hr, 2-hr plasma glucose) + CBC + Indirect Coombs",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Ministry of Health Maternal Care Protocol (Week 24-28 Care Package)"
+    }
+   }
+  ],
+  "rawSibPayloadSnippet": {
+   "sys_patient_uid": "SIB-IR-10492837-77",
+   "cod_meli": "0019283746",
+   "parvandeh_khanewadeh": "08-C-044",
+   "gestational_week": 26,
+   "rh_factor": "Rh_NEGATIVE"
+  }
+ },
+ {
+  "id": "p-04",
+  "nationalId": "0041289455",
+  "name": "Ali Karimi",
+  "persianName": "علی کریمی",
+  "age": 67,
+  "gender": "M",
+  "birthDate": "1959-11-20",
+  "birthDateJalali": "1338/08/29",
+  "householdNumber": "55-د-103",
+  "healthCenter": "Deh Namak Rural Comprehensive Health Center (مرکز جامع ده‌نمک)",
+  "healthHouse": "Khorram-Deh Health House (خانه بهداشت خرم‌ده)",
+  "assignedBehvarz": "Maryam Karimi (بهورز: مریم کریمی)",
+  "phone": "0912-777-4321",
+  "insuranceType": "Rural Health Insurance (بیمه سلامت روستایی)",
+  "bloodType": "O+",
+  "chronicConditions": [
+   {
+    "name": "Chronic Obstructive Pulmonary Disease (COPD)",
+    "persianName": "بیماری مزمن انسدادی ریه (COPD)",
+    "sinceJalali": "1395/02",
+    "controlStatus": "SUBOPTIMAL"
+   },
+   {
+    "name": "Heart Failure with Preserved EF (HFpEF)",
+    "persianName": "نارسایی قلبی با کسر تخلیه‌ای حفظ شده",
+    "sinceJalali": "1399/10",
+    "controlStatus": "SUBOPTIMAL"
+   }
+  ],
+  "currentMedications": [
+   {
+    "name": "Tiotropium Bromide Respimat",
+    "dosage": "2.5 mcg",
+    "frequency": "2 puffs daily inhaled (۲ پاف روزانه استنشاقی)",
+    "complianceReported": "REGULAR",
+    "indication": "COPD Maintenance (بیماری مزمن ریوی COPD)",
+    "startDateJalali": "1395/03/15",
+    "lastDispensedJalali": "1405/04/18",
+    "refillsCount": 45,
+    "prescribedBy": "Dr. S. Hosseini (Pulmonologist / Specialist)",
+    "monitoringNotes": "Assess inhaler priming and breath-hold technique annually."
+   },
+   {
+    "name": "Furosemide 40mg",
+    "dosage": "40 mg",
+    "frequency": "1 tablet morning (یک قرص صبح‌ها)",
+    "complianceReported": "REGULAR",
+    "indication": "Heart Failure Volume Control & Peripheral Edema (نارسایی قلبی و کنترل ورم)",
+    "startDateJalali": "1399/11/02",
+    "lastDispensedJalali": "1405/04/18",
+    "refillsCount": 22,
+    "prescribedBy": "Dr. N. Alavi (Family Physician)",
+    "monitoringNotes": "Risk of hypokalemia/dehydration; assess BUN/Cr and weight daily."
+   },
+   {
+    "name": "Spironolactone 25mg",
+    "dosage": "25 mg",
+    "frequency": "Once daily morning (روزی یک عدد)",
+    "complianceReported": "REGULAR",
+    "indication": "Heart Failure Aldosterone Antagonist (مهارکننده آلدوسترون در نارسایی قلبی)",
+    "startDateJalali": "1401/02/10",
+    "lastDispensedJalali": "1405/04/18",
+    "refillsCount": 16,
+    "prescribedBy": "Dr. N. Alavi (Family Physician)",
+    "monitoringNotes": "CRITICAL: Severe hyperkalemia risk when co-administered with NSAIDs. Monitor K+ levels."
+   }
+  ],
+  "vitalsHistory": [
+   {
+    "date": "2026-08-10",
+    "jalaliDate": "1405/05/19",
+    "bloodPressureSys": 128,
+    "bloodPressureDia": 78,
+    "heartRate": 84,
+    "weightKg": 68,
+    "heightCm": 168,
+    "bmi": 24.1,
+    "measuredBy": "Dr. N. Alavi",
+    "recordedIn": "SIB Outpatient Clinic Module"
+   }
+  ],
+  "encounters": [
+   {
+    "id": "enc-401",
+    "date": "2026-08-10",
+    "jalaliDate": "1405/05/19",
+    "facility": "Deh Namak Rural Center",
+    "clinician": "Dr. N. Alavi",
+    "role": "Family Physician",
+    "complaint": "Exertional dyspnea when walking uphill; mild ankle edema in evenings",
+    "diagnosis": "COPD Gold Group B, Chronic Heart Failure NYHA Class II",
+    "icdCode": "J44.9 / I50.9",
+    "vitals": {
+     "bloodPressureSys": 128,
+     "bloodPressureDia": 78,
+     "heartRate": 84
+    },
+    "actionsTaken": [
+     "Auscultated chest: bilateral expiratory rhonchi",
+     "Adjusted Furosemide",
+     "Advised limiting dietary sodium"
+    ],
+    "sibModule": "فرم مراقبت بیماری‌های غیرواگیر (پزشک خانواده)"
+   }
+  ],
+  "preventiveCare": [
+   {
+    "category": "Annual Influenza Vaccine (واکسیناسیون سالیانه آنفلوانزا)",
+    "persianCategory": "واکسن فصلی آنفلوانزا برای گروه‌های پرخطر",
+    "status": "DUE",
+    "nextDue": "2026-10-01",
+    "nextDueJalali": "1405/07/09",
+    "details": "Patient has high-risk cardiopulmonary comorbidities; priority for autumn seasonal influenza campaign.",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "National Immunization Advisory Board for High-Risk Groups"
+    }
+   },
+   {
+    "category": "Pneumococcal Vaccine (واکسن پنوموکوک ۲۳ ظرفیتی)",
+    "persianCategory": "واکسیناسیون پنوموکوک",
+    "status": "UP_TO_DATE",
+    "lastDone": "2023-11-15",
+    "lastDoneJalali": "1402/08/24",
+    "details": "Pneumovax 23 administered at district health center.",
+    "provenance": {
+     "type": "FACT",
+     "sourceText": "SIB Vaccine Registry Form-V04"
+    }
+   }
+  ],
+  "dataQualityIssues": [
+   {
+    "id": "dq-41",
+    "severity": "CRITICAL",
+    "type": "CONTRADICTION",
+    "title": "Concurrent NSAID use recorded in pharmacy dispensed log without physician order",
+    "description": "SIB Pharmacy integration logged Naproxen 500mg dispensed 3 weeks ago, posing acute kidney injury / heart failure exacerbation risk with Furosemide + Spironolactone.",
+    "sibLocation": "SIB Electronic Prescription / Dispensing Integration (بیمه سلامت)",
+    "suggestedCorrection": "Clinician interview: Stop OTC NSAIDs immediately; counsel on acetaminophen for analgesia.",
+    "provenance": {
+     "type": "INFERENCE",
+     "sourceText": "Cross-referenced insurance prescription claim with current active regimen.",
+     "requiresConfirmation": true
+    }
+   }
+  ],
+  "suggestions": [
+   {
+    "id": "sug-41",
+    "priority": "HIGH",
+    "title": "Check Serum Electrolytes & Renal Function (Na, K, Cr, BUN)",
+    "rationale": "Patient is on dual diuretics (Furosemide + Spironolactone) with recent NSAID exposure.",
+    "actionType": "LAB_ORDER",
+    "draftValue": "Serum Electrolytes (Na, K), Serum Creatinine, BUN",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "Cardiorenal Safety Protocol in Primary Care"
+    }
+   },
+   {
+    "id": "sug-42",
+    "priority": "MEDIUM",
+    "title": "Pulse Oximetry and Inhaler Technique Verification",
+    "rationale": "Assess resting SpO2 today and ask patient to demonstrate Respimat inhalation technique.",
+    "actionType": "LIFESTYLE",
+    "draftValue": "Assess SpO2; demonstrate priming and breath-hold with Respimat",
+    "provenance": {
+     "type": "SUGGESTION",
+     "sourceText": "GOLD COPD Guidelines for Primary Health Care Centers"
+    }
+   }
+  ],
+  "rawSibPayloadSnippet": {
+   "sys_patient_uid": "SIB-IR-30491829-45",
+   "cod_meli": "0041289456",
+   "parvandeh_khanewadeh": "55-D-103",
+   "contraindication_alert": "NSAID_DIURETIC_INTERACTION_FLAG"
+  }
+ }
+]
