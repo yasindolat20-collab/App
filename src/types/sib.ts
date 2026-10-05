@@ -151,6 +151,7 @@ export interface CurrentVisitDraft {
   weightKg: string;
   bloodGlucose: string;
   physicalFindings: string;
+  clinicalNotes?: string;
   diagnoses: string[];
   newPrescriptions: string[];
   labOrders: string[];

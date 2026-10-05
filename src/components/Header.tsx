@@ -1,8 +1,27 @@
 import React from 'react';
-import { Wifi, WifiOff, RefreshCw, Layers, ShieldCheck, Database, Target, Globe2 } from 'lucide-react';
+import {
+  Wifi,
+  WifiOff,
+  RefreshCw,
+  Layers,
+  ShieldCheck,
+  Database,
+  Target,
+  Stethoscope,
+  Users,
+  AlertOctagon,
+} from 'lucide-react';
 import { ConnectivityStatus } from '../types/sib';
 
-export type MainTabType = 'executive-goals' | 'command-center' | 'bridge-view' | 'sync-queue' | 'guidelines';
+export type MainTabType =
+  | 'executive-goals'
+  | 'clinical-intelligence'
+  | 'command-center'
+  | 'diagnostic-referral'
+  | 'age-care'
+  | 'guidelines'
+  | 'bridge-view'
+  | 'sync-queue';
 
 interface HeaderProps {
   currentTab: MainTabType;
@@ -11,6 +30,7 @@ interface HeaderProps {
   onChangeConnectivity: (status: ConnectivityStatus) => void;
   queuedCount: number;
   onOpenSyncDrawer: () => void;
+  onOpenEmergencyModal?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -20,6 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
   onChangeConnectivity,
   queuedCount,
   onOpenSyncDrawer,
+  onOpenEmergencyModal,
 }) => {
   return (
     <header className="sticky top-0 z-30 flex items-center justify-between px-6 py-2.5 bg-slate-950/95 border-b border-slate-800 text-slate-100 shadow-xl backdrop-blur-md">
@@ -38,14 +59,14 @@ export const Header: React.FC<HeaderProps> = ({
           </span>
           <span className="tracking-wide">Ω-SIB</span>
         </a>
-        <div className="hidden xl:flex items-center gap-2 text-xs text-slate-400 border-l border-slate-800 pl-3">
+        <div className="hidden 2xl:flex items-center gap-2 text-xs text-slate-400 border-l border-slate-800 pl-3">
           <Database className="w-3.5 h-3.5 text-teal-400" />
-          <span>لایه هوشمند عملیاتی و دیده‌بان سلامت</span>
+          <span>لایه هوشمند بالینی و دیده‌بان سلامت</span>
         </div>
       </div>
 
       {/* Main Navigation Links */}
-      <nav className="hidden md:flex items-center gap-5 text-xs font-medium">
+      <nav className="hidden md:flex items-center gap-4 text-xs font-medium">
         <button
           onClick={() => onSelectTab('executive-goals')}
           className={`transition-all py-1 border-b-2 flex items-center gap-1.5 ${
@@ -70,6 +91,30 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         <button
+          onClick={() => onSelectTab('diagnostic-referral')}
+          className={`transition-all py-1 border-b-2 flex items-center gap-1.5 ${
+            currentTab === 'diagnostic-referral'
+              ? 'border-teal-400 text-teal-300 font-semibold'
+              : 'border-transparent text-slate-400 hover:text-slate-200'
+          }`}
+        >
+          <Stethoscope className="w-3.5 h-3.5" />
+          <span>Diagnosis & Referral</span>
+        </button>
+
+        <button
+          onClick={() => onSelectTab('age-care')}
+          className={`transition-all py-1 border-b-2 flex items-center gap-1.5 ${
+            currentTab === 'age-care'
+              ? 'border-teal-400 text-teal-300 font-semibold'
+              : 'border-transparent text-slate-400 hover:text-slate-200'
+          }`}
+        >
+          <Users className="w-3.5 h-3.5" />
+          <span>Age-Specific Care</span>
+        </button>
+
+        <button
           onClick={() => onSelectTab('guidelines')}
           className={`transition-all py-1 border-b-2 flex items-center gap-1.5 ${
             currentTab === 'guidelines'
@@ -78,7 +123,7 @@ export const Header: React.FC<HeaderProps> = ({
           }`}
         >
           <ShieldCheck className="w-3.5 h-3.5" />
-          <span>MoH Guidelines</span>
+          <span>Guidelines</span>
         </button>
 
         <button
@@ -90,29 +135,24 @@ export const Header: React.FC<HeaderProps> = ({
           }`}
         >
           <Layers className="w-3.5 h-3.5" />
-          <span>SIB Bridge Architecture</span>
-        </button>
-
-        <button
-          onClick={() => onSelectTab('sync-queue')}
-          className={`transition-all py-1 border-b-2 flex items-center gap-1.5 ${
-            currentTab === 'sync-queue'
-              ? 'border-teal-400 text-teal-300 font-semibold'
-              : 'border-transparent text-slate-400 hover:text-slate-200'
-          }`}
-        >
-          <RefreshCw className="w-3.5 h-3.5" />
-          <span>Offline Queue</span>
-          {queuedCount > 0 && (
-            <span className="text-[10px] font-mono text-amber-300 tabular-figures">
-              ({queuedCount})
-            </span>
-          )}
+          <span>Architecture</span>
         </button>
       </nav>
 
-      {/* Connectivity & Physician Session */}
+      {/* Emergency Button, Connectivity & Physician Session */}
       <div className="flex items-center gap-3">
+        {/* Instant Emergency Red Flag Trigger */}
+        {onOpenEmergencyModal && (
+          <button
+            onClick={onOpenEmergencyModal}
+            className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs shadow-md transition-all animate-pulse shrink-0"
+            title="Open Emergency Triage & Rescue Protocol"
+          >
+            <AlertOctagon className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">پروتکل اورژانس</span>
+          </button>
+        )}
+
         {/* Connectivity Selector */}
         <div className="flex items-center bg-slate-900 rounded-lg p-0.5 border border-slate-800 text-xs">
           <button
@@ -125,7 +165,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <Wifi className="w-3 h-3 text-emerald-400" />
-            <span className="hidden sm:inline text-[11px]">ONLINE</span>
+            <span className="hidden xl:inline text-[11px]">ONLINE</span>
           </button>
 
           <button
@@ -138,7 +178,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <RefreshCw className="w-3 h-3 text-amber-400" />
-            <span className="hidden sm:inline text-[11px]">DEGRADED</span>
+            <span className="hidden xl:inline text-[11px]">DEGRADED</span>
           </button>
 
           <button
@@ -151,7 +191,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <WifiOff className="w-3 h-3 text-rose-400" />
-            <span className="hidden sm:inline text-[11px]">QUEUED</span>
+            <span className="hidden xl:inline text-[11px]">QUEUED</span>
           </button>
         </div>
 
@@ -173,7 +213,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div className="hidden sm:block text-left leading-none">
             <div className="text-xs font-semibold text-white">Dr. N. Alavi, MD</div>
-            <div className="text-[10px] text-slate-400 mt-0.5">کد نظام: ۷۴۸۹۲</div>
+            <div className="text-[10px] text-slate-400 mt-0.5">پزشک خانواده</div>
           </div>
         </div>
       </div>

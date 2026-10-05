@@ -485,6 +485,20 @@ export default function App() {
         </div>
       )}
 
+      {/* Tab: Clinical Intelligence, Age Care, Emergencies & Specialist Workup Suite */}
+      {(currentTab === 'clinical-intelligence' ||
+        currentTab === 'diagnostic-referral' ||
+        currentTab === 'age-care') && (
+        <main className="flex-1 max-w-[1600px] w-full mx-auto px-4 sm:px-6 py-6">
+          <SibClinicalIntelligenceCenter
+            patient={activePatient}
+            draft={visitDraft}
+            onApplyDraftChanges={(updated) => setVisitDraft((prev) => ({ ...prev, ...updated }))}
+            isFarsi={isFarsi}
+          />
+        </main>
+      )}
+
       {/* Tab 2: SIB Bridge Architecture View */}
       {currentTab === 'bridge-view' && (
         <main className="flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 py-6">
