@@ -1,0 +1,6 @@
+{
+  "name": "Ω-SIB | سامانه هوشمند بالینی یکپارچه بهداشت",
+  "description": "Clinician-facing intelligent operational layer built around Iran's Integrated Health System (SIB / سامانه یکپارچه بهداشت).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
