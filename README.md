@@ -61,6 +61,18 @@ SIB is the operational backbone of primary care in Iran, but its workflow is for
 | Settings | تنظیمات | Clinician profile, AI engine status, SIB bridge status, sync queue with retry/flush, append-only audit log |
 | Ω-Chat | دستیار هوشمند | Grounded natural-language assistant with a draft → confirm → execute → audit workflow |
 
+## Screenshots
+
+All screenshots are from the running application (Persian RTL-first UI, English toggle available in the header).
+
+| Sign in | Practice dashboard |
+| --- | --- |
+| ![Login screen](docs/screenshots/login.webp) | ![Dashboard](docs/screenshots/dashboard.webp) |
+
+| Patient chart — conditions, medication profile, vitals, drug alerts and prioritised suggestions with provenance | Ω-Chat — grounded answer, evidence and the draft plan awaiting clinician confirmation |
+| --- | --- |
+| ![Patient chart](docs/screenshots/patient-chart.webp) | ![Ω-Chat draft plan](docs/screenshots/omega-chat-draft.webp) |
+
 ---
 
 ## Architecture

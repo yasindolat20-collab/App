@@ -271,6 +271,11 @@ def _interval_fixed(months: int) -> Callable[[Patient, set[str]], int]:
     return lambda _p, _s: months
 
 
+def schedule_categories() -> set[str]:
+    """Every category owned by the Ω-SIB preventive-care schedule."""
+    return {spec.category for spec in CARE_SCHEDULE}
+
+
 def _no_interval(_p: Patient, _s: set[str]) -> int:
     return 120
 
@@ -372,6 +377,38 @@ CARE_SCHEDULE: list[CareGapSpec] = [
         applies=lambda _p, s, a: ("elderly" in s) or bool(
             {"diabetes", "copd", "asthma", "heart_failure", "ckd"} & s
         ) or (a or 0) >= 60,
+        source="preventive",
+    ),
+    CareGapSpec(
+        category="DIABETIC_FOOT_EXAM",
+        persian_category="معاینه پای دیابتی (مونوفیلامان)",
+        guideline="National diabetes programme (annual foot examination with monofilament)",
+        interval_months=_interval_fixed(12),
+        applies=lambda _p, s, _a: "diabetes" in s,
+        source="preventive",
+    ),
+    CareGapSpec(
+        category="URINE_ALBUMIN",
+        persian_category="آلبومین به کراتینین ادرار (نفروپاتی دیابتی)",
+        guideline="National diabetes programme (annual urine albumin-to-creatinine ratio)",
+        interval_months=_interval_fixed(12),
+        applies=lambda _p, s, _a: "diabetes" in s or "hypertension" in s,
+        source="preventive",
+    ),
+    CareGapSpec(
+        category="IRA_PEN_RISK",
+        persian_category="خطرسنجی قلبی‌عروقی ایراپن",
+        guideline="IraPEN risk assessment (annual for adults 40+, 6-monthly when high risk)",
+        interval_months=_interval_fixed(12),
+        applies=lambda _p, _s, a: a is not None and a >= 40,
+        source="preventive",
+    ),
+    CareGapSpec(
+        category="SMOKING_CESSATION",
+        persian_category="مشاوره ترک سیگار",
+        guideline="National tobacco-control programme (offer counselling at least annually)",
+        interval_months=_interval_fixed(12),
+        applies=lambda p, _s, _a: bool(p.smoker),
         source="preventive",
     ),
     CareGapSpec(

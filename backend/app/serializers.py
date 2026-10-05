@@ -154,6 +154,9 @@ def patient_detail(patient: Patient) -> dict[str, Any]:
                     "interval_months": row.interval_months,
                     "details": row.details,
                     "guideline": row.guideline,
+                    "source": "schedule"
+                    if row.category in clinical_rules.schedule_categories()
+                    else "recorded",
                 }
                 for row in sorted(patient.preventive_care, key=lambda r: r.category)
             ],

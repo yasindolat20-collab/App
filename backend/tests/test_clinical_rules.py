@@ -116,6 +116,30 @@ def test_up_to_date_when_recently_done():
     assert gaps["MAMMOGRAPHY"]["status"] == "UP_TO_DATE"
 
 
+def test_diabetes_specific_items_and_overdue_detection():
+    patient = make_patient(id="p-dm", gender="M", birth_date=dt.date(1960, 2, 2))
+    patient.conditions.append(Condition(name="Type 2 Diabetes Mellitus", control_status="SUBOPTIMAL"))
+    patient.preventive_care.append(
+        PreventiveCareItem(category="DIABETIC_FOOT_EXAM", last_done_jalali="1403/10/25")
+    )
+    gaps = {g["category"]: g for g in clinical_rules.care_gaps(patient)}
+    assert gaps["DIABETIC_FOOT_EXAM"]["status"] == "OVERDUE"
+    assert gaps["URINE_ALBUMIN"]["status"] in {"DUE", "OVERDUE"}
+    assert gaps["IRA_PEN_RISK"]["status"] in {"DUE", "OVERDUE"}
+    assert gaps["SMOKING_CESSATION"]["status"] == "NOT_APPLICABLE"
+
+
+def test_smoking_cessation_applies_to_smokers():
+    patient = make_patient(id="p-smoke", smoker=True, birth_date=dt.date(1980, 1, 1))
+    gaps = {g["category"]: g for g in clinical_rules.care_gaps(patient)}
+    assert gaps["SMOKING_CESSATION"]["status"] == "DUE"
+
+
+def test_schedule_categories_cover_extended_items():
+    categories = clinical_rules.schedule_categories()
+    assert {"DIABETIC_FOOT_EXAM", "URINE_ALBUMIN", "IRA_PEN_RISK", "SMOKING_CESSATION"} <= categories
+
+
 # --------------------------------------------------------------------------- #
 # Drug safety
 # --------------------------------------------------------------------------- #

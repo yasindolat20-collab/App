@@ -132,6 +132,14 @@ PREVENTIVE_CATEGORY_MAP: list[tuple[str, str]] = [
     ("mental", "DEPRESSION_SCREEN"),
     ("influenza", "INFLUENZA_VACCINE"),
     ("tetanus", "TETANUS_VACCINE"),
+    ("diabetic foot", "DIABETIC_FOOT_EXAM"),
+    ("foot examination", "DIABETIC_FOOT_EXAM"),
+    ("microalbuminuria", "URINE_ALBUMIN"),
+    ("nephropathy", "URINE_ALBUMIN"),
+    ("irapen", "IRA_PEN_RISK"),
+    ("cardiovascular risk", "IRA_PEN_RISK"),
+    ("smoking cessation", "SMOKING_CESSATION"),
+    ("tobacco", "SMOKING_CESSATION"),
 ]
 
 
